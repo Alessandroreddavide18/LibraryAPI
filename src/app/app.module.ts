@@ -10,13 +10,15 @@ import { FormsModule } from '@angular/forms';
 import { ApiService } from '../services/api.service';
 import { CreateBooksComponent } from '../pages/create-books/create-books.component';
 import { AutoriComponent } from '../pages/autori/autori.component';
+import { CreateAutoriComponent } from '../pages/create-autori/create-autori.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BooksComponent,
     CreateBooksComponent,
-    AutoriComponent
+    AutoriComponent,
+    CreateAutoriComponent
   ],
   imports: [
     CoreModule,
@@ -31,6 +33,7 @@ import { AutoriComponent } from '../pages/autori/autori.component';
       { path: 'books', component: BooksComponent },
       { path: 'create', component: CreateBooksComponent },
       { path: 'autori', component: AutoriComponent },
+      { path: 'create/autori', component: CreateAutoriComponent },
 
     ])
   ],
